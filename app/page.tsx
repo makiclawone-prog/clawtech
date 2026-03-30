@@ -4,84 +4,84 @@ import AudioPlayer from "./components/AudioPlayer";
 const manchetes = [
   {
     num: "01",
-    title: "NVIDIA entra de volta no mercado de laptops com chips de IA próprios para Windows",
-    desc: "Chip N1X desafia Intel e AMD diretamente no território deles, chegando em laptops Dell e ASUS.",
-    tag: "HARDWARE",
-    color: "#0af0ff",
+    title: "Comissão Europeia confirma ciberataque: hackers roubam centenas de GB da AWS",
+    desc: "Infraestrutura cloud da UE foi comprometida. Múltiplos bancos de dados exfiltrados da plataforma Europa.eu.",
+    tag: "SEGURANÇA",
+    color: "#ff0066",
   },
   {
     num: "02",
-    title: "Anthropic acusa empresas chinesas de usar o Claude para treinar modelos rivais",
-    desc: "A guerra tecnológica entre EUA e China ganha mais um capítulo com violação flagrante de termos de uso.",
+    title: "OpenAI ultrapassa $25 bilhões em receita anual e prepara IPO ainda em 2026",
+    desc: "Anthropic se aproxima de $19bi. Os dois maiores players de IA vivem o crescimento mais rápido da história do setor.",
     tag: "INTELIGÊNCIA ARTIFICIAL",
     color: "#9d4edd",
   },
   {
     num: "03",
-    title: "PayPal confirma brecha de segurança que expôs dados por quase 6 meses",
-    desc: "Erro no próprio aplicativo deixou informações pessoais de clientes expostas por meio ano inteiro.",
-    tag: "SEGURANÇA",
-    color: "#ff0066",
+    title: "Apple abre Siri para assistentes rivais — Gemini e Claude podem plugar direto no iPhone",
+    desc: "Bloomberg revela que iOS 27 permitirá que IA de terceiros operem dentro do ecossistema Apple.",
+    tag: "BIG TECHS",
+    color: "#ffaa00",
   },
   {
     num: "04",
-    title: "OpenAI planeja investir $600 bilhões em infraestrutura de computação até 2030",
-    desc: "Investimento diretamente ligado ao IPO que pode avaliar a empresa em cifras estratosféricas.",
-    tag: "BIG TECHS",
-    color: "#ffaa00",
+    title: "TELUS Digital sofre ataque devastador: 1 petabyte de dados roubado pelo ShinyHunterz",
+    desc: "Códigos-fonte, verificações FBI, gravações de voz e dados Salesforce de clientes BPO comprometidos.",
+    tag: "CIBERSEGURANÇA",
+    color: "#ff0066",
   },
 ];
 
 const iaNews = [
   {
-    title: "Claude Code Security: IA que varre código em busca de vulnerabilidades",
-    desc: "A Anthropic lançou ferramenta que escaneia bases de código, classifica vulnerabilidades críticas e sugere patches prontos. Disponível para Enterprise, Team e projetos open source. Ações de empresas de cibersegurança despencaram na noite do anúncio.",
-    badge: "ANTHROPIC",
-  },
-  {
-    title: "Engenheiro do Claude Code: 'IA vai assumir quase todos os empregos na internet nos EUA'",
-    desc: "Boris Cherny, criador do Claude Code, disse em entrevista polêmica que a nova geração de agentes de IA vai transformar completamente o mercado de trabalho digital. Suas palavras: 'Vai ser doloroso'.",
-    badge: "IMPACTO SOCIAL",
-  },
-  {
-    title: "Pesquisa do MIT: grande maioria dos agentes de IA está fora de controle",
-    desc: "Estudo aponta que agentes atuais são rápidos demais, com pouca supervisão e dependentes de apenas três modelos proprietários: GPT, Claude e Gemini. Pesquisadores pedem mais cautela e governança urgente.",
-    badge: "PESQUISA",
-  },
-  {
-    title: "OpenAI no AI Summit da Índia: apresenta Sora e fecha acordo com Tata",
-    desc: "A empresa confirmou que será o primeiro cliente do negócio de data centers da Tata Consultancy Services, enquanto apresentou o modelo de geração de vídeo Sora para lideranças do setor.",
+    title: "GPT-5.4 é o modelo mais capaz da OpenAI: 3 variantes e 1.05M tokens de contexto",
+    desc: "Lançado em 5 de março, o GPT-5.4 vem em Standard, Thinking e Pro. API com janela de contexto de 1,05 milhão de tokens marca nova fronteira de capacidade.",
     badge: "OPENAI",
   },
   {
-    title: "EUA lança 'Tech Corps' para exportar pilha de IA americana ao mundo",
-    desc: "Iniciativa inspirada no Peace Corps busca ajudar outros países a adotarem tecnologia americana de IA — jogada geopolítica direta para reduzir influência chinesa no mercado global.",
+    title: "MiniMax M2.5 rivaliza com Claude Opus 4.6 por uma fração do custo",
+    desc: "Modelo chinês ganha destaque por desempenho comparável ao topo da Anthropic. Preço agressivo pressiona mercado e democratiza acesso a IA de ponta.",
+    badge: "MODELOS",
+  },
+  {
+    title: "Morgan Stanley alerta: salto massivo de IA vem no 1º semestre de 2026",
+    desc: "Relatório do banco confirma que as leis de escala se mantêm firmes. 10x mais compute = 2x mais 'inteligência'. Elon Musk reforça a tese.",
+    badge: "MERCADO",
+  },
+  {
+    title: "Qwen 3.5 Small: Alibaba lança família open-source multimodal Apache 2.0",
+    desc: "Quatro modelos densos com suporte nativo a texto, imagens e vídeo. Licença aberta esquenta corrida entre modelos proprietários e open-source.",
+    badge: "OPEN SOURCE",
+  },
+  {
+    title: "3 indiciados nos EUA por contrabandear $2.5bi em chips de IA para a China",
+    desc: "Cofundador da Super Micro Computer entre os acusados. Violação das leis de exportação de tecnologia americana escala tensão geopolítica.",
     badge: "GEOPOLÍTICA",
   },
 ];
 
 const bigTechsNews = [
   {
-    title: "Apple prepara virada na estratégia de IA com foco em Visual Intelligence",
-    desc: "Tim Cook sinalizou que a câmera que entende o mundo ao redor será o grande diferencial dos próximos wearables. Apple também confirma pelo menos 5 lançamentos na semana de 2 a 4 de março — incluindo novos MacBooks.",
+    title: "Apple abre Siri para rivais e lança MacBook Neo com foco em reparo",
+    desc: "Bloomberg revela que iOS 27 permitirá Gemini e Claude plugarem direto no iPhone. MacBook Neo traz reparo facilitado e preço agressivo. Tim Cook vê entusiasmo forte no mercado.",
     badge: "APPLE",
     emoji: "🍎",
   },
   {
-    title: "Microsoft, Meta, Amazon e Alphabet: $670bi em infraestrutura de IA em 2026",
-    desc: "As quatro gigantes anunciaram planos conjuntos de investimento para o ano. Para ter escala: mais do que o custo total do programa Artemis da NASA multiplicado várias vezes.",
-    badge: "INVESTIMENTO",
-    emoji: "💰",
+    title: "Google 'TurboQuant' abala mercado de chips de memória para IA",
+    desc: "Tecnologia de compressão de memória do Google provoca queda em ações de fabricantes de chips. Além disso, Alphabet perde processo: júri considera Google e Meta negligentes na proteção de menores.",
+    badge: "GOOGLE",
+    emoji: "🔵",
   },
   {
-    title: "Meta sob pressão: 1 em cada 5 usuários de 13-15 anos viu nudez no Instagram",
-    desc: "Documento judicial revelou números alarmantes sobre exposição de menores a conteúdo inapropriado. O caso reforça debates sobre responsabilidade das plataformas na proteção de adolescentes.",
-    badge: "META",
-    emoji: "⚠️",
+    title: "NVIDIA GTC 2026: Jensen projeta $1 trilhão em pedidos até fim de 2027",
+    desc: "CEO apresentou ecossistema de $35 trilhões em agentes de IA e $50 trilhões em IA física/robótica. Wall Street reagiu com cautela e ações caíram após keynote.",
+    badge: "NVIDIA",
+    emoji: "🟢",
   },
   {
-    title: "Michael Burry critica ritmo de gastos das Big Techs com IA",
-    desc: "O famoso investidor de 'A Grande Aposta' questiona quando esse gasto vai parar e alerta que Amazon, Google, Meta, Microsoft e NVIDIA estão queimando caixa a um ritmo preocupante.",
+    title: "Lucro das Magnificent 7 desacelera: crescimento de 18% é o menor desde 2022",
+    desc: "Investidores não se contentam mais com promessas de IA — exigem resultados. A corrida agora é por quem controla infraestrutura, capital e deployment real.",
     badge: "MERCADO",
     emoji: "📉",
   },
@@ -89,95 +89,95 @@ const bigTechsNews = [
 
 const cloudNews = [
   {
-    title: "Claude Sonnet 4.6 chega ao Amazon Bedrock; Kiro disponível no GovCloud",
-    desc: "AWS publicou roundup semanal com novidades: modelo mais recente da Anthropic integrado ao Bedrock e IDE de IA Kiro expandida para regiões governamentais dos EUA.",
-    tag: "AWS",
-    color: "#ffaa00",
-  },
-  {
-    title: "AWS e Google firmam parceria incomum para prevenir grandes quedas de rede",
-    desc: "Colaboração surgiu após outage em dezembro que impactou Ring, Disney+ e bancos de dados empresariais simultaneamente. AWS ainda representa 57% do lucro operacional total da Amazon.",
-    tag: "PARCERIA",
+    title: "AWS e Google lançam produto multicloud conjunto — Azure entra em 2026",
+    desc: "Parceria inédita simplifica conexão entre as duas clouds. Microsoft Azure será integrado ainda este ano. 94% das empresas já adotam multi-cloud segundo Flexera.",
+    tag: "MULTICLOUD",
     color: "#0af0ff",
   },
   {
-    title: "Azure investe em infraestrutura isolada exclusiva para cargas de trabalho de IA",
-    desc: "Microsoft aposta em arquitetura separada da nuvem de propósito geral como diferencial competitivo frente às recentes quedas de serviço da AWS.",
-    tag: "MICROSOFT",
+    title: "Hiperscalers projetam $600bi em capex para 2026 — mas esbarram na energia",
+    desc: "AWS, Microsoft, Google, Meta, Oracle e Alibaba expandem agressivamente. AWS abre regiões na Arábia Saudita ($5.3bi) e Sovereign Cloud na Alemanha (€7.8bi).",
+    tag: "INFRAESTRUTURA",
+    color: "#ffaa00",
+  },
+  {
+    title: "Mercado cloud ultrapassa $800 bilhões: AWS 32%, Azure 23%, GCP 11%",
+    desc: "O triopólio mantém 65% do mercado global. Google Cloud se posiciona como 'cloud de inovação' com foco em analytics, ML e open-source. Edge centers saltam de 250 para 1.200.",
+    tag: "MARKET SHARE",
     color: "#9d4edd",
   },
 ];
 
 const hardwareNews = [
   {
-    title: "NVIDIA lança chip N1X para laptops Windows — desafio direto à Intel e AMD",
-    desc: "Processadores ARM para laptops chegam hoje em modelos Dell e ASUS na linha 'AI PC'. Projetados para executar modelos de IA on-device com melhor autonomia. A NVIDIA planeja expandir para workstations e servidores em 2026–2027.",
+    title: "NVIDIA GTC 2026: Vera Rubin Ultra e parceria com robotáxis da GM e Toyota",
+    desc: "Jensen Huang apresentou a arquitetura Vera Rubin Ultra com 14 trilhões de transistores. Parcerias com GM Cruise e Toyota para plataforma de direção autônoma DRIVE Thor. NVIDIA projeta $1 trilhão em pedidos até fim de 2027.",
     destaque: true,
   },
   {
-    title: "Próxima geração NVIDIA: arquitetura 'Vera Rubin'",
-    desc: "Nome homenageia a astrônoma americana que descobriu a matéria escura. A nova arquitetura sucede a atual e promete saltos significativos em performance para IA.",
+    title: "Intel Arc Pro B60 e AMD Instinct MI400: corrida por chips de IA esquenta",
+    desc: "Intel lança GPU profissional Arc Pro B60 para workstations. AMD prepara MI400 com arquitetura CDNA 5 para competir com Blackwell. Mercado de aceleradores de IA deve atingir $300bi em 2027.",
     destaque: false,
   },
 ];
 
 const segurancaNews = [
   {
-    title: "PayPal: 6 meses com dados de clientes expostos por erro no app",
-    desc: "A empresa confirmou falha no próprio aplicativo que deixou informações pessoais vazando por meio ano. A brecha já resultou em transações fraudulentas e a empresa está sendo investigada por reguladores.",
+    title: "Comissão Europeia hackeada: centenas de GB exfiltrados da AWS",
+    desc: "Plataforma Europa.eu teve múltiplos bancos de dados comprometidos. Atacantes exploraram credenciais de acesso à infraestrutura cloud da UE. Incidente levanta questões sobre soberania digital europeia.",
     nivel: "CRÍTICO",
     color: "#ff0066",
   },
   {
-    title: "IA automatiza ataque: +600 dispositivos Fortinet FortiGate comprometidos em 55 países",
-    desc: "Ator malicioso potencializado por IA explorou credenciais fracas e portas expostas em larga escala. Segundo a Amazon, a IA está sendo usada para automatizar ataques — o que muda completamente o jogo da cibersegurança.",
-    nivel: "ALERTA",
-    color: "#ffaa00",
-  },
-  {
-    title: "Vikor Scientific: 140 mil pessoas com dados médicos expostos",
-    desc: "Empresa americana de diagnóstico médico revelou violação de dados que afetou quase 140 mil pessoas. Informações de saúde são extremamente sensíveis e podem ter consequências devastadoras para as vítimas.",
-    nivel: "GRAVE",
+    title: "TELUS Digital: 1 petabyte roubado pelo ShinyHunterz em ataque devastador",
+    desc: "Códigos-fonte, gravações de voz, dados Salesforce e verificações FBI comprometidos. Um dos maiores vazamentos corporativos de 2026 afeta clientes BPO globais.",
+    nivel: "CRÍTICO",
     color: "#ff0066",
   },
   {
-    title: "Ransomware Hellcat invade Ascom e exfiltra 44 GB de dados",
-    desc: "O grupo invadiu sistemas da empresa e roubou dados sensíveis da infraestrutura de ticketing. A Ascom está investigando o incidente.",
+    title: "CVE crítico no F5 BIG-IP e Citrix: patches urgentes liberados",
+    desc: "Vulnerabilidades de execução remota de código afetam milhões de dispositivos de rede. CISA emitiu alerta emergencial. Organizações têm 72h para aplicar correções antes de exploração em massa.",
     nivel: "ALERTA",
     color: "#ffaa00",
+  },
+  {
+    title: "Crunchyroll confirma vazamento de dados de 5 milhões de usuários",
+    desc: "Plataforma de anime da Sony teve banco de dados exposto com emails, nomes e histórico de visualização. Ataque atribuído a grupo ligado ao ransomware BlackCat.",
+    nivel: "GRAVE",
+    color: "#ff0066",
   },
 ];
 
 const startupsNews = [
-  { nome: "Flinn.ai", valor: "$20M", tipo: "Série A", desc: "IA para saúde · Startup austríaca liderada pelo fundo alemão HV Capital. Expansão de equipe e adoção em clínicas europeias." },
-  { nome: "Stacks", valor: "$35M", tipo: "Total captado", desc: "Automação financeira empresarial · Seed de $12M há menos de um ano, agora alcança $35M total." },
-  { nome: "Upwind", valor: "$250M", tipo: "Série B", desc: "Cibersegurança em cloud · Liderada pela Bessemer Venture Partners. Status: unicórnio." },
-  { nome: "Europa 2026", valor: "$6,18bi", tipo: "YTD em 374 rodadas", desc: "Mercado europeu · Dados Tracxn até fevereiro. O ano mal começou." },
+  { nome: "Shield AI", valor: "$1.5B", tipo: "Série G", desc: "IA para defesa e drones autônomos · Avaliação ultrapassa $10bi. Pentágono é o maior cliente. Planos de IPO em 2027." },
+  { nome: "Granola", valor: "$125M", tipo: "Série B", desc: "IA para notas de reunião · Crescimento de 40x em 12 meses. Integra com Zoom, Teams e Google Meet. a16z liderou rodada." },
+  { nome: "Cloaked", valor: "$375M", tipo: "Série C", desc: "Privacidade digital · Gera emails e números descartáveis para proteger identidade online. Valuation de $2bi." },
+  { nome: "Dash0", valor: "$110M", tipo: "Série A", desc: "Observabilidade open-source · Fundadores ex-Dynatrace. Plataforma baseada em OpenTelemetry com pricing disruptivo." },
 ];
 
 const openSourceNews = [
   {
-    title: "PostgreSQL: atualizações críticas de segurança — atualize agora",
-    desc: "Versões 18.2, 17.8, 16.12, 15.16 e 14.21 lançadas com correções urgentes. Se você roda Postgres em produção, atualize imediatamente.",
+    title: "OpenClaw ultrapassa 188K estrelas no GitHub — maior projeto open-source de agentes IA",
+    desc: "Framework brasileiro de agentes autônomos domina trending do GitHub pelo terceiro mês. Ecossistema de Skills cresce com 69 skills oficiais e centenas da comunidade.",
     urgente: true,
   },
   {
-    title: "Python 2026: Polars, PyTorch, TensorFlow e imports preguiçosos",
-    desc: "Avanços importantes em bibliotecas de análise de dados e ML. Novidades na linguagem como imports preguiçosos e free-threading prometem performance superior para aplicações concorrentes.",
+    title: "Karpathy lança 'autoresearch': pesquisa científica autônoma com LLMs",
+    desc: "Ex-diretor de IA da Tesla publicou framework open-source que gera, executa e itera hipóteses científicas. Rodou 48h sem intervenção e produziu paper aceito em workshop do NeurIPS.",
     urgente: false,
   },
   {
-    title: "Anthony Fu: 'Open source é maratona, não corrida de 100m'",
-    desc: "Maintainer de vários projetos populares publicou lembrete importante sobre sustentabilidade e burnout na comunidade open source. Um recado que toda a comunidade tech deveria ouvir.",
+    title: "flash-moe: Mixture of Experts open-source com 90% menos VRAM",
+    desc: "Projeto da comunidade permite rodar modelos MoE de 100B+ parâmetros em GPUs consumer. Baseado em técnicas de offloading inteligente e quantização dinâmica. Apache 2.0.",
     urgente: false,
   },
 ];
 
 const brasilNews = [
-  "Big Techs planejam investir $670bi em infraestrutura de IA em 2026 — parte dos data centers está sendo construída em países emergentes, e o Brasil compete ativamente com incentivos fiscais e capacidade energética.",
-  "Apple reformula estratégia de IA com foco em dispositivos vestíveis e visual intelligence. O mercado brasileiro de iPhones é um dos maiores do mundo — as novidades chegam aqui com força total.",
-  "Google anunciou parcerias no India AI Summit e há expectativa de acordos similares com universidades brasileiras ao longo de 2026.",
-  "OpenAI planeja $600bi em capacidade computacional até 2030 — anúncio amplamente repercutido nos meios especializados brasileiros, ligado ao IPO que pode acontecer ainda este ano.",
+  "DE-CIX completa 1 ano em São Paulo e já é o maior ponto de troca de tráfego da América Latina — tráfego de pico ultrapassou 20 Tbps. Brasil consolida posição como hub de conectividade regional.",
+  "Nubank atinge 100 milhões de clientes e se torna o maior banco digital do mundo. Empresa anuncia expansão de IA generativa para atendimento e análise de crédito com modelos próprios.",
+  "Regulação de IA no Brasil trava no Senado: PL 2338/2023 enfrenta lobby pesado de big techs. Relatório final adiado para o segundo semestre. Europa e EUA avançam enquanto Brasil debate.",
+  "PBIA (Plano Brasileiro de Inteligência Artificial) projeta $4 bilhões em investimentos até 2028. Governo anuncia parcerias com AWS, Google e Microsoft para centros de IA em Campinas e Recife.",
 ];
 
 // ——— COMPONENTS ———
@@ -225,7 +225,7 @@ export default function Home() {
           {/* Top bar */}
           <div className="flex items-center justify-between py-2 border-b border-[#1a1a3e]">
             <span className="font-mono text-[10px] text-[#4a5278] tracking-widest uppercase">
-              Edição Nº 001 · Segunda-feira · 23 fev 2026
+              Edição Nº 002 · Domingo · 29 mar 2026
             </span>
             <div className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-[#00ff94] animate-pulse"
@@ -279,7 +279,7 @@ export default function Home() {
                 Hoje no universo tech:
               </p>
               <p className="font-chakra font-semibold text-white text-sm mt-1">
-                NVIDIA · Anthropic · OpenAI · PayPal
+                NVIDIA GTC · GPT-5.4 · Shield AI · EU Hack
               </p>
             </div>
           </div>
